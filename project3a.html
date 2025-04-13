@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Quiz</title>
+  <link rel="stylesheet" href="project3a.css" />
+</head>
+<body>
+  <h1>Welcome to take the quiz!</h1><br>
+
+  <div id="start-section">
+
+    <h3>Please enter your name:</h3>
+    <input id="text" type="text" placeholder="Name"><br><br>
+    <button id="submitbn">Submit</button>
+
+    <h3>Please select a quiz</h3>
+    <button class="quiz-select" data-quiz="quiz1">Quiz A</button>
+    <button class="quiz-select" data-quiz="quiz2">Quiz B</button>
+  </div>
+
+  <div id="quiz-section" style="display: none;">
+    <h2 id="quiz-title"></h2>
+    <h3>Name: <span id="display-username"></span></h3>
+
+    <div id="scoreboard">
+      <p>Question: <span id="question-number"></span> / <span id="total-questions"></span></p>
+      <p>Score: <span id="score"></span></p>
+    </div>
+
+    <div id="question-container">
+        <h3>Calculate the area of this rectangle (width = 4cm, length = 6cm):</h3>
+      <!-- Use a relative file path to the image -->
+      <img src="https://study.com/cimages/multimages/16/222224971011527207636336.jpg", alt="Rectangle with width 4cm and length 6cm" />
+    </div>
+
+    <button id="next-btn">Next</button>
+    <div id="feedback"></div>
+  </div>
+
+  <div id="final-section" style="display: none;">
+    <h3>Quiz finished!</h3>
+    <h3>Your score is: <span id="totalScore"></span></h3>
+    <button id="returnbn">Return to Main Page</button>
+  </div>
+
+
+  <script src="login.js"></script>
+ 
+</body>
+</html>
